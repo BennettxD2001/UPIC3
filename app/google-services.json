@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "673802098138",
+    "firebase_url": "https://upic-d48e8-default-rtdb.firebaseio.com",
+    "project_id": "upic-d48e8",
+    "storage_bucket": "upic-d48e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673802098138:android:db023f3697d4b0dd92dce3",
+        "android_client_info": {
+          "package_name": "com.example.upic2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673802098138-m79dfi0avjk9diql36040jftlg1bakhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfEghy57XrUNjEa37Ddp7QtCm8Hytq26E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673802098138-m79dfi0avjk9diql36040jftlg1bakhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

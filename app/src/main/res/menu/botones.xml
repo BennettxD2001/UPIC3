@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_mecanicos"
+        android:icon="@drawable/ic_mec"
+        android:title="Mecanicos" />
+
+    <item
+        android:id="@+id/navigation_electricos"
+        android:icon="@drawable/ic_ele"
+        android:title="Electricos" />
+
+    <item
+        android:id="@+id/navigation_vulcanizadoras"
+        android:icon="@drawable/ic_vul"
+        android:title="Vulcanizadoras" />
+
+</menu>
