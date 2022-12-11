@@ -76,7 +76,7 @@ public class SignIn extends AppCompatActivity {
         data.put("Nombre",etNombre.getText().toString());
         data.put("Apellido",etApellido.getText().toString());
         data.put("Correo",etCorreo.getText().toString());
-        data.put("Telefono",etTelefono.getText().toString());
+        data.put("Teléfono",etTelefono.getText().toString());
         data.put("Cilindraje",etCilindraje.getText().toString());
         data.put("Marca",etMarca.getText().toString());
         data.put("Modelo",etModelo.getText().toString());

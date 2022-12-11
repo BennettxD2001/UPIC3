@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Llegada">
+    tools:context=".Proceso">
 
     <TextView
         android:id="@+id/lleg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="El UPIC va en camino"
+        android:text="@string/tu_upic_est_en_proceso"
         android:textColor="@color/black"
         android:textSize="22sp" />
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="12dp"
-            android:text="El asociado llegara en 5 min"
+            android:text="@string/no_te_desesperes_el_asociado_est_haciendo_lo_que_puede_gracias"
             android:textColor="@color/black" />
 
         <ImageView
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
-            android:text="5 MIN"
+            android:text="1 HR"
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_light" />
 
@@ -63,9 +63,9 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:minHeight="48dp"
-            android:text="¿Aun no llega?"
-            tools:ignore="TouchTargetSizeCheck"
-            android:onClick="callRep"/>
+            android:onClick="callRep"
+            android:text="@string/alg_n_problema"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button2"
@@ -74,8 +74,8 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:minHeight="48dp"
-            android:text="LLego"
-            android:onClick="callProc"
+            android:onClick="callComen"
+            android:text="@string/termin"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 

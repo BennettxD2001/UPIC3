@@ -76,13 +76,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (item.getItemId()) {
                     case R.id.navigation_mecanicos:
                         loadMecanicosData(gMap);
-                        tvMapaServicio.setText("Mecanicos Disponibles");
+                        tvMapaServicio.setText("Mecánicos Disponibles");
                         item.setChecked(true);
                         break;
                     case R.id.navigation_electricos:
                         loadElectricosData(gMap);
                         item.setChecked(true);
-                        tvMapaServicio.setText("Electricos Disponibles");
+                        tvMapaServicio.setText("Eléctricos Disponibles");
                         break;
                     case R.id.navigation_vulcanizadoras:
                         loadVulcanizadorasData(gMap);
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     public void loadMecanicosData(GoogleMap googleMap){
         googleMap.clear();
-        reference.child("Servicios/Mecanicos").addValueEventListener(new ValueEventListener() {
+        reference.child("Servicios/Mecánicos").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mecanicos.removeAll(mecanicos);
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public boolean onMarkerClick(@NonNull Marker marker) {
                 Intent i=new Intent(MainActivity.this, BusinessDetail.class);
                 i.putExtra("ID",marker.getTag().toString());
-                i.putExtra("TIPO","Mecanicos");
+                i.putExtra("TIPO","Mecánicos");
                 i.putExtra("UID",uid);
                 startActivity(i);
                 return false;
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     public void loadElectricosData(GoogleMap googleMap){
         googleMap.clear();
-        reference.child("Servicios/Electricos").addValueEventListener(new ValueEventListener() {
+        reference.child("Servicios/Eléctricos").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 electricos.removeAll(electricos);
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public boolean onMarkerClick(@NonNull Marker marker) {
                 Intent i=new Intent(MainActivity.this, BusinessDetail.class);
                 i.putExtra("ID",marker.getTag().toString());
-                i.putExtra("TIPO","Electricos");
+                i.putExtra("TIPO","Eléctricos");
                 i.putExtra("UID",uid);
                 startActivity(i);
                 return false;
