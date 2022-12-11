@@ -29,14 +29,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Muchas gracias por pedir tu UPIC, no tarda en llegar" />
+                android:text="@string/muchas_gracias_por_pedir_tu_upic_no_tardar_en_llegar" />
 
             <Button
                 android:id="@+id/sig"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Siguiente"
+                android:text="@string/siguiente"
                 android:onClick="callLleg"/>
         </LinearLayout>
     </ScrollView>

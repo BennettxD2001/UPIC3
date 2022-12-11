@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reporte del Problema"
+        android:text="@string/reporte_del_problema"
         android:textSize="28sp"
         android:textAlignment="center"
         android:layout_margin="10dp"
@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Especifica tu situacion"
+        android:text="@string/especifica_tu_situaci_n"
         android:textSize="18sp"
         android:textAlignment="center"
         android:layout_margin="10dp"/>
@@ -24,14 +24,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="Describe la situacion"
+        android:hint="@string/describe_la_situaci_nn"
         android:inputType="textMultiLine"
         android:minHeight="48dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Datos de tu vehiculo"
+        android:text="@string/datos_de_tu_veh_culo"
         android:textSize="18sp"
         android:textAlignment="center"
         android:layout_margin="10dp"
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Marca"
+            android:text="@string/marca"
             android:textSize="18sp"
             android:layout_margin="10dp"
             android:layout_weight="1"/>
@@ -68,7 +68,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Modelo"
+            android:text="@string/modeloo"
             android:textSize="18sp"
             android:layout_margin="10dp"
             android:layout_weight="1"/>
@@ -91,7 +91,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cilindraje"
+            android:text="@string/cilindraje"
             android:textSize="18sp"
             android:layout_margin="10dp"
             android:layout_weight="1"/>
@@ -114,7 +114,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Año"
+            android:text="@string/a_o"
             android:textSize="18sp"
             android:layout_margin="10dp"
             android:layout_weight="1"/>
@@ -136,7 +136,7 @@
             android:id="@+id/btnComentarios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancelar"
+            android:text="@string/cancelar"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:onClick="callMap"/>
@@ -145,7 +145,7 @@
             android:id="@+id/btnPedir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirmar"
+            android:text="@string/confirmar"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:onClick="callConf"/>

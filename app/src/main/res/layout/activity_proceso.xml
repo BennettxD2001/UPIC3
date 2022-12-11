@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="Tu UPIC esta en proceso"
+        android:text="@string/tu_upic_est_en_proceso"
         android:textColor="@color/black"
         android:textSize="22sp" />
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="12dp"
-            android:text="No te desesperes el asociado esta haciendo lo que puede. ¡Gracias!"
+            android:text="@string/no_te_desesperes_el_asociado_est_haciendo_lo_que_puede_gracias"
             android:textColor="@color/black" />
 
         <ImageView
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:minHeight="48dp"
             android:onClick="callRep"
-            android:text="¿Algun problema?"
+            android:text="@string/alg_n_problema"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
@@ -75,7 +75,7 @@
             android:layout_weight="1"
             android:minHeight="48dp"
             android:onClick="callComen"
-            android:text="Termino"
+            android:text="@string/termin"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
