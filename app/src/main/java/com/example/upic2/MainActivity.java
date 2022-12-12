@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
@@ -71,6 +72,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Bundle extras=i.getExtras();
         uid=extras.getString("UID");
         navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            public boolean onCreateOptionMenu(Menu menu){
+                getMenuInflater().inflate(R.menu.botones, menu);
+                return true;
+            }
+
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -89,6 +95,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         item.setChecked(true);
                         tvMapaServicio.setText("Vulcanizadoras Disponibles");
                         break;
+                    case R.id.navigation_conf:
+                        startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCALE_SETTINGS), 0);
+                        return true;
                 }
                 return false;
             }

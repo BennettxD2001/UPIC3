@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="El UPIC va en camino"
+        android:text="@string/el_upic_va_en_camino"
         android:textColor="@color/black"
         android:textSize="22sp" />
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="12dp"
-            android:text="El asociado llegara en 5 min"
+            android:text="@string/el_asociado_llegar_en_5_min"
             android:textColor="@color/black" />
 
         <ImageView
@@ -63,7 +63,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:minHeight="48dp"
-            android:text="¿Aun no llega?"
+            android:text="@string/a_n_no_llega"
             tools:ignore="TouchTargetSizeCheck"
             android:onClick="callRep"/>
 
@@ -74,7 +74,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:minHeight="48dp"
-            android:text="LLego"
+            android:text="@string/lleg"
             android:onClick="callProc"
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>

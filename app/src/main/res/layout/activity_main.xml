@@ -25,7 +25,7 @@
                 android:id="@+id/tvMapaServicio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mecanicos Disponibles"
+                android:text="@string/mec_nicos_disponibles"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_margin="10dp"

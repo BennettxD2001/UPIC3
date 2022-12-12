@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/navigation_conf"
+        android:title="Configuración"
+        android:icon="@drawable/ic_settings" />
     <item
         android:id="@+id/navigation_mecanicos"
         android:icon="@drawable/ic_mec"

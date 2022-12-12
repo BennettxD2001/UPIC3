@@ -37,14 +37,14 @@ public class BusinessDetail extends AppCompatActivity {
         servicios=findViewById(R.id.servicios);
         tipoServicio=findViewById(R.id.tvTipoServicio);
         nombre=findViewById(R.id.nombreServicio);
-        tipo=extras.getString("TIPO");
+        tipo=extras.getString(getString(R.string.tipo));
         id=extras.getString("ID");
         uid=extras.getString("UID");
-        tipoServicio.setText("Servicio de "+tipo);
+        tipoServicio.setText(getString(R.string.servicio)+tipo);
         datosReference.child("Servicios/"+tipo+"/"+id).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String name=snapshot.child("Nombre").getValue(String.class);
+                String name=snapshot.child(getString(R.string.nombree)).getValue(String.class);
                 String services=snapshot.child("Servicios").getValue(String.class);
 
                 nombre.setText(name.toString());
@@ -89,12 +89,12 @@ public class BusinessDetail extends AppCompatActivity {
     }
 
     public void loadVehicleData(){
-        vehicleReference.child("Usuarios/"+uid).addValueEventListener(new ValueEventListener() {
+        vehicleReference.child(getString(R.string.usuarios)+uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                marca.setText(snapshot.child("Marca").getValue(String.class));
-                modelo.setText(snapshot.child("Modelo").getValue(String.class));
-                cilindraje.setText(snapshot.child("Cilindraje").getValue(String.class));
+                marca.setText(snapshot.child(getString(R.string.marcaa)).getValue(String.class));
+                modelo.setText(snapshot.child(getString(R.string.model)).getValue(String.class));
+                cilindraje.setText(snapshot.child(getString(R.string.cilindrajee)).getValue(String.class));
                 anio.setText(snapshot.child("Anio").getValue(String.class));
             }
             @Override
@@ -105,7 +105,7 @@ public class BusinessDetail extends AppCompatActivity {
     }
     public void callMap(View view){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
-
+        i.putExtra("UID",uid);
         startActivity(i);
     }
     public void callConf(View view){

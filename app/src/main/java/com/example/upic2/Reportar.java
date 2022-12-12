@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+
 public class Reportar extends AppCompatActivity {
+    String uid="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +19,8 @@ public class Reportar extends AppCompatActivity {
     }
     public void callMap(View view){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
-
+        i.putExtra("UID",uid);
         startActivity(i);
     }
+
 }
