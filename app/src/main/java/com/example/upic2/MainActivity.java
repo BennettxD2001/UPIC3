@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 getMenuInflater().inflate(R.menu.botones, menu);
                 return true;
             }
+
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -94,6 +95,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         item.setChecked(true);
                         tvMapaServicio.setText("Vulcanizadoras Disponibles");
                         break;
+                    case R.id.navigation_conf:
+                        startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCALE_SETTINGS), 0);
+                        return true;
                 }
                 return false;
             }
