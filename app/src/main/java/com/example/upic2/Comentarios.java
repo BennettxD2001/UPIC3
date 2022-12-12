@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Comentarios extends AppCompatActivity {
+    String uid="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +16,7 @@ public class Comentarios extends AppCompatActivity {
     }
     public void callMap(View view){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
-
+        i.putExtra("UID",uid);
         startActivity(i);
     }
 

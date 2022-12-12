@@ -105,7 +105,7 @@ public class BusinessDetail extends AppCompatActivity {
     }
     public void callMap(View view){
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
-
+        i.putExtra("UID",uid);
         startActivity(i);
     }
     public void callConf(View view){
