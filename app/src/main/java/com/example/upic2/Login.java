@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +17,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.net.URI;
+
 public class Login extends AppCompatActivity {
     EditText correo, contra;
-    Button iniciar, registrarse;
+    String _url = "https://www.facebook.com/erik.mares.104";
+    Button iniciar, registrarse,_btn_contacto;
     FirebaseAuth mAuth;
 
     @Override
@@ -29,7 +33,18 @@ public class Login extends AppCompatActivity {
         contra=findViewById(R.id.contra);
         iniciar=findViewById(R.id.inic);
         registrarse=findViewById(R.id.registrarse);
+        _btn_contacto=findViewById(R.id.btn_contacto);
         mAuth = FirebaseAuth.getInstance();
+
+        _btn_contacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri _link = Uri.parse(_url);
+                Intent i = new Intent(Intent.ACTION_VIEW,_link);
+                startActivity(i);
+
+            }
+        });
         iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
