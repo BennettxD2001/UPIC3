@@ -3,10 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_conf"
-        android:title="Configuración"
-        android:icon="@drawable/ic_settings" />
-    <item
         android:id="@+id/navigation_mecanicos"
         android:icon="@drawable/ic_mec"
         android:title="Mecanicos" />
@@ -20,5 +16,9 @@
         android:id="@+id/navigation_vulcanizadoras"
         android:icon="@drawable/ic_vul"
         android:title="Vulcanizadoras" />
+    <item
+        android:id="@+id/navigation_conf"
+        android:title="Configuración"
+        android:icon="@drawable/ic_settings" />
 
 </menu>
