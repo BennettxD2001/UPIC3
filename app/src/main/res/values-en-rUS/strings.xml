@@ -6,7 +6,7 @@
     <string name="title_activity_login">Login</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_registro">Sing up</string>
+    <string name="action_registro">Sign up</string>
     <string name="action_sign_in_short">Log in</string>
     <string name="welcome">Welcome!</string>
     <string name="invalid_username">Not a valid username</string>
@@ -25,7 +25,7 @@
     <string name="correo_electronic">Email</string>
     <string name="contrase">Password:</string>
     <string name="con">Password.</string>
-    <string name="iniciar_sesi_n">Sing up.</string>
+    <string name="iniciar_sesi_n">Sing up</string>
     <string name="todo">ALL</string>
     <string name="a_n_no_tienes_cuenta">Don\'t have an account yet?</string>
     <string name="title_activity_menu_principal">Main menu</string>
@@ -102,5 +102,34 @@
     <string name="te_gust_nuestro_servicio">Did you like our service?</string>
     <string name="comentarioss">Comments</string>
     <string name="pedir_servicio">Request service</string>
-
+    <string name="registrarse">Sign in</string>
+....
+    <string name="Reportee">Report</string>
+    <string name="especifica_tu_situacionn">Specify your situation</string>
+    <string name="describe_la_situacionn">Describe your situation</string>
+    <string name="qu_quieres_hacerr">What do you want to do?</string>
+    <string name="reportar_y_cancelarr">Report and cancel</string>
+    <string name="cancelarr">Cancel</string>
+    <string name="Mecanicos_disp">Mechanics available</string>
+    <string name="elect_dips">Electric Available</string>
+    <string name="vul_disp">Available vulcanizers</string>
+    <string name="serv_mec">Services/Mechanics</string>
+    <string name="tipoo">TYPE</string>
+    <string name="mecanicoss">Mechanics</string>
+    <string name="serv_elec">Services/Electrical</string>
+    <string name="tip">TYPE</string>
+    <string name="elecr">Electrical</string>
+    <string name="serv_vul">Services/Vulcanizers</string>
+    <string name="tipp">TYPE</string>
+    <string name="vvul">Vulcanizers</string>
+    <string name="nom">Name</string>
+    <string name="ap">Last name</string>
+    <string name="maiil">Email</string>
+    <string name="cel">Phone</string>
+    <string name="cil">Cylinder capacity</string>
+    <string name="marc">Brand</string>
+    <string name="mod">Model</string>
+    <string name="tip_v">Type of vehicle</string>
+    <string name="an">Year</string>
+    <string name="us">Users/</string>
 </resources>

@@ -82,18 +82,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (item.getItemId()) {
                     case R.id.navigation_mecanicos:
                         loadMecanicosData(gMap);
-                        tvMapaServicio.setText("Mecánicos Disponibles");
+                        tvMapaServicio.setText(R.string.Mecanicos_disp);
                         item.setChecked(true);
                         break;
                     case R.id.navigation_electricos:
                         loadElectricosData(gMap);
                         item.setChecked(true);
-                        tvMapaServicio.setText("Eléctricos Disponibles");
+                        tvMapaServicio.setText(R.string.elect_dips);
                         break;
                     case R.id.navigation_vulcanizadoras:
                         loadVulcanizadorasData(gMap);
                         item.setChecked(true);
-                        tvMapaServicio.setText("Vulcanizadoras Disponibles");
+                        tvMapaServicio.setText(R.string.vul_disp);
                         break;
                     case R.id.navigation_conf:
                         startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCALE_SETTINGS), 0);
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     public void loadMecanicosData(GoogleMap googleMap){
         googleMap.clear();
-        reference.child("Servicios/Mecánicos").addValueEventListener(new ValueEventListener() {
+        reference.child(getString(R.string.serv_mec)).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mecanicos.removeAll(mecanicos);
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public boolean onMarkerClick(@NonNull Marker marker) {
                 Intent i=new Intent(MainActivity.this, BusinessDetail.class);
                 i.putExtra("ID",marker.getTag().toString());
-                i.putExtra("TIPO","Mecánicos");
+                i.putExtra(getString(R.string.tipoo),getString(R.string.mecanicoss));
                 i.putExtra("UID",uid);
                 startActivity(i);
                 return false;
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     public void loadElectricosData(GoogleMap googleMap){
         googleMap.clear();
-        reference.child("Servicios/Eléctricos").addValueEventListener(new ValueEventListener() {
+        reference.child(getString(R.string.serv_elec)).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 electricos.removeAll(electricos);
@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public boolean onMarkerClick(@NonNull Marker marker) {
                 Intent i=new Intent(MainActivity.this, BusinessDetail.class);
                 i.putExtra("ID",marker.getTag().toString());
-                i.putExtra("TIPO","Eléctricos");
+                i.putExtra(getString(R.string.tip),getString(R.string.elecr));
                 i.putExtra("UID",uid);
                 startActivity(i);
                 return false;
@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     public void loadVulcanizadorasData(GoogleMap googleMap){
         googleMap.clear();
-        reference.child("Servicios/Vulcanizadoras").addValueEventListener(new ValueEventListener() {
+        reference.child(getString(R.string.serv_vul)).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 vulcanizadoras.removeAll(vulcanizadoras);
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public boolean onMarkerClick(@NonNull Marker marker) {
                 Intent i=new Intent(MainActivity.this, BusinessDetail.class);
                 i.putExtra("ID",marker.getTag().toString());
-                i.putExtra("TIPO","Vulcanizadoras");
+                i.putExtra(getString(R.string.tipp),getString(R.string.vvul));
                 i.putExtra("UID",uid);
                 startActivity(i);
                 return false;

@@ -73,16 +73,16 @@ public class SignIn extends AppCompatActivity {
     public void createDatabaseUser(){
         String uid=mAuth.getCurrentUser().getUid();
         HashMap<String, Object> data=new HashMap<>();
-        data.put("Nombre",etNombre.getText().toString());
-        data.put("Apellido",etApellido.getText().toString());
-        data.put("Correo",etCorreo.getText().toString());
-        data.put("Teléfono",etTelefono.getText().toString());
-        data.put("Cilindraje",etCilindraje.getText().toString());
-        data.put("Marca",etMarca.getText().toString());
-        data.put("Modelo",etModelo.getText().toString());
-        data.put("TipoVehiculo",etTipoVehiculo.getText().toString());
-        data.put("Anio",etAnio.getText().toString());
-        reference.child("Usuarios/"+uid).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+        data.put(getString(R.string.nom),etNombre.getText().toString());
+        data.put(getString(R.string.ap),etApellido.getText().toString());
+        data.put(getString(R.string.maiil),etCorreo.getText().toString());
+        data.put(getString(R.string.cel),etTelefono.getText().toString());
+        data.put(getString(R.string.cil),etCilindraje.getText().toString());
+        data.put(getString(R.string.marc),etMarca.getText().toString());
+        data.put(getString(R.string.mod),etModelo.getText().toString());
+        data.put(getString(R.string.tip_v),etTipoVehiculo.getText().toString());
+        data.put(getString(R.string.an),etAnio.getText().toString());
+        reference.child(getString(R.string.us)+uid).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){
